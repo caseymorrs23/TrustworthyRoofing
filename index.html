@@ -4,19 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Trustworthy Roofing | Trustworthy Construction – Puyallup, WA</title>
-  <meta name="description" content="Trustworthy Roofing (Trustworthy Construction) provides roof replacement, roof repair, and maintenance in Pierce and South King County. Free estimates. Quality craftsmanship and clear communication." />
+  <meta name="description" content="Trustworthy Roofing (Trustworthy Construction) provides roof replacement, roof repair, and maintenance in Puyallup and the Plateau. Free estimates. Quality craftsmanship and clear communication." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
-  <style>
-    :root{--brand:#0e7490;--brand2:#155e75}
-    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans",sans-serif}
-    .headline{font-family:"Playfair Display",serif}
-    .glass{backdrop-filter: blur(8px); background: rgba(255,255,255,.08)}
-    .shadow-soft{box-shadow:0 10px 30px rgba(0,0,0,.15)}
-  </style>
+  <link rel="stylesheet" href="/css/styles.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -25,23 +19,13 @@
     "url": "https://trustworthy-construction.com",
     "areaServed": ["Pierce County","South King County","Puyallup","Sumner","Bonney Lake","Buckley","Graham","Auburn","Kent","Federal Way"],
     "priceRange": "$$",
-    "telephone": "+1-253-455-4347",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Puyallup",
-      "addressRegion": "WA"
-    },
-    "sameAs": [
-      "https://www.bbb.org/us/wa/puyallup/profile/remodel-contractors/trustworthy-construction-llc-1296-1000163709",
-      "https://www.facebook.com/trustworthyconstruction"
-    ],
-    "email": "Teamtrustworthyconstruction@gmail.com",
-    "license": "WA # TRUSTWCC12345"
+    "telephone": "(253) 455-4347",
+    "address": {"@type": "PostalAddress","addressLocality": "Puyallup","addressRegion": "WA"},
+    "sameAs": ["https://www.bbb.org/us/wa/puyallup/profile/remodel-contractors/trustworthy-construction-llc-1296-1000163709", "https://trustworthy-construction.com"]
   }
   </script>
 </head>
 <body class="bg-slate-50 text-slate-800">
-  <!-- Top Bar -->
   <div class="bg-slate-900 text-white text-sm">
     <div class="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
       <div>Serving Pierce & South King County</div>
@@ -52,12 +36,15 @@
     </div>
   </div>
 
-  <!-- Header / Nav -->
   <header class="bg-white sticky top-0 z-40 border-b border-slate-200/70">
     <div class="max-w-7xl mx-auto px-4">
       <div class="flex items-center justify-between h-16">
         <a class="flex items-center gap-3" href="#home">
-          <img src="/assets/TrustworthyLogo.jpg" alt="Trustworthy Roofing logo" class="w-10 h-10 rounded-full"/>
+          <img src="/assets/logo.png" alt="Trustworthy Roofing logo" class="w-9 h-9 rounded-full object-cover ring-2 ring-cyan-600"/>
+          <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-cyan-700">
+            <path d="M6 22L24 8l18 14v18a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V22Z" stroke="currentColor" stroke-width="2"/>
+            <path d="M17 34V24h14v10" stroke="currentColor" stroke-width="2"/>
+          </svg>
           <div class="leading-tight">
             <div class="font-extrabold text-slate-900 text-lg">Trustworthy Roofing</div>
             <div class="text-xs text-slate-500">by Trustworthy Construction</div>
@@ -88,33 +75,241 @@
     </div>
   </header>
 
-  <!-- Cities We Serve -->
-  <section id="cities" class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-4">
-      <h2 class="headline text-3xl md:text-4xl font-extrabold">Cities We Serve</h2>
-      <p class="mt-3 text-slate-600">Fast, reliable roofing across Pierce & South King County.</p>
-      <div class="mt-6 flex flex-wrap gap-3">
-        <a class="px-4 py-2 rounded-lg border border-slate-300 hover:bg-slate-100" href="/auburn.html">Auburn</a>
-        <a class="px-4 py-2 rounded-lg border border-slate-300 hover:bg-slate-100" href="/kent.html">Kent</a>
-        <a class="px-4 py-2 rounded-lg border border-slate-300 hover:bg-slate-100" href="/federal-way.html">Federal Way</a>
-        <a class="px-4 py-2 rounded-lg border border-slate-300 hover:bg-slate-100" href="/puyallup.html">Puyallup</a>
-        <a class="px-4 py-2 rounded-lg border border-slate-300 hover:bg-slate-100" href="/bonney-lake.html">Bonney Lake</a>
-        <a class="px-4 py-2 rounded-lg border border-slate-300 hover:bg-slate-100" href="/sumner.html">Sumner</a>
-        <a class="px-4 py-2 rounded-lg border border-slate-300 hover:bg-slate-100" href="/buckley.html">Buckley</a>
-        <a class="px-4 py-2 rounded-lg border border-slate-300 hover:bg-slate-100" href="/graham.html">Graham</a>
+  <section id="home" class="relative">
+    <div class="absolute inset-0">
+      <img src="https://images.unsplash.com/photo-1604014237800-1c9102c4d522?q=80&w=2000&auto=format&fit=crop" alt="New roofing shingles on a home" class="w-full h-full object-cover"/>
+      <div class="absolute inset-0 bg-slate-900/60"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 py-28">
+      <div class="max-w-3xl text-white">
+        <h1 class="headline text-4xl md:text-6xl font-extrabold leading-tight">Roofing that puts <span class="text-cyan-300">trust</span> first.</h1>
+        <p class="mt-5 text-lg md:text-xl text-slate-100/90">Reliable roof replacement, repairs, and maintenance for Puyallup and the Plateau. Local crew. Clear communication. Solid warranties.</p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="#contact" class="inline-flex items-center justify-center rounded-xl px-5 py-3 bg-cyan-600 hover:bg-cyan-700 text-white font-semibold">Get a Free Estimate</a>
+          <a href="#services" class="inline-flex items-center justify-center rounded-xl px-5 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold border border-white/30">Explore Services</a>
+        </div>
+        <div class="mt-6 text-sm text-slate-200/90">Residential • Multi‑Family • Light Commercial</div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <section class="bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-4 -mt-12 relative z-10">
+        <div class="glass border border-white/20 rounded-2xl p-5 text-white bg-cyan-800">
+          <div class="font-bold">Locally Owned</div>
+          <div class="text-sm opacity-90">Based in Puyallup, serving the Plateau</div>
+        </div>
+        <div class="glass border border-white/20 rounded-2xl p-5 text-white bg-cyan-800">
+          <div class="font-bold">Licensed & Insured</div>
+          <div class="text-sm opacity-90">WA contractor license: <span class="opacity-70">Add #</span></div>
+        </div>
+        <div class="glass border border-white/20 rounded-2xl p-5 text-white bg-cyan-800">
+          <div class="font-bold">Clear Communication</div>
+          <div class="text-sm opacity-90">Dedicated project lead from bid to final clean‑up</div>
+        </div>
+        <a class="glass border border-white/20 rounded-2xl p-5 text-white bg-cyan-800 hover:bg-cyan-900" href="#contact">
+          <div class="font-bold">Free Estimates</div>
+          <div class="text-sm opacity-90">Fast response • No pressure</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="headline text-3xl md:text-4xl font-extrabold">Roofing services that cover every need</h2>
+          <p class="mt-4 text-slate-600">From fixing leaks to full replacements, we build roofs that last. We help you choose the right system for your home, budget, and timeline—and we keep you informed at every step.</p>
+          <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-slate-700">
+            <li class="flex items-start gap-3"><span class="mt-1">✅</span> Roof Replacement (asphalt, metal)</li>
+            <li class="flex items-start gap-3"><span class="mt-1">✅</span> Roof Repair & Leak Diagnosis</li>
+            <li class="flex items-start gap-3"><span class="mt-1">✅</span> Roof Maintenance & Tune‑Ups</li>
+            <li class="flex items-start gap-3"><span class="mt-1">✅</span> Gutters & Guards</li>
+            <li class="flex items-start gap-3"><span class="mt-1">✅</span> Skylights & Flashing</li>
+            <li class="flex items-start gap-3"><span class="mt-1">✅</span> Storm Damage Assessments</li>
+          </ul>
+          <div class="mt-8 flex gap-3">
+            <a href="#contact" class="rounded-xl bg-cyan-700 text-white px-5 py-3 font-semibold hover:bg-cyan-800">Request an Estimate</a>
+            <a href="#faq" class="rounded-xl border border-slate-300 px-5 py-3 font-semibold hover:bg-slate-100">FAQ</a>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <img class="rounded-2xl" src="https://images.unsplash.com/photo-1589487391730-58f20eb2c308?q=80&w=1200&auto=format&fit=crop" alt="Shingle roof replacement"/>
+          <img class="rounded-2xl" src="https://images.unsplash.com/photo-1602937091682-c1b3c0f2fd3a?q=80&w=1200&auto=format&fit=crop" alt="Roofing crew at work"/>
+          <img class="rounded-2xl col-span-2" src="https://images.unsplash.com/photo-1599834562307-2715581d1613?q=80&w=1600&auto=format&fit=crop" alt="New gutters installed"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="md:col-span-1">
+          <h2 class="headline text-3xl md:text-4xl font-extrabold">A process built on trust</h2>
+          <p class="mt-4 text-slate-600">Our approach emphasizes planning, safety, and tidy job sites—so you get great results without surprises.</p>
+        </div>
+        <div class="md:col-span-2 grid sm:grid-cols-2 gap-6">
+          <div class="rounded-2xl bg-white p-6 border border-slate-200 shadow-sm">
+            <div class="font-bold">Detailed Proposals</div>
+            <p class="text-slate-600 mt-2">Clear scope, materials, and timelines—no guesswork. Options to fit different budgets.</p>
+          </div>
+          <div class="rounded-2xl bg-white p-6 border border-slate-200 shadow-sm">
+            <div class="font-bold">Top Materials</div>
+            <p class="text-slate-600 mt-2">We recommend brands we trust and install them to manufacturer specs for lasting performance.</p>
+          </div>
+          <div class="rounded-2xl bg-white p-6 border border-slate-200 shadow-sm">
+            <div class="font-bold">Communication</div>
+            <p class="text-slate-600 mt-2">You’ll have a single point of contact and updates from start to finish.</p>
+          </div>
+          <div class="rounded-2xl bg-white p-6 border border-slate-200 shadow-sm">
+            <div class="font-bold">Cleanup & Care</div>
+            <p class="text-slate-600 mt-2">Magnet sweep, protected landscaping, and photo documentation at completion.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-end justify-between gap-3 mb-8">
+        <h2 class="headline text-3xl md:text-4xl font-extrabold">Recent Projects</h2>
+        <a href="#contact" class="text-cyan-700 hover:underline">Book a roof assessment →</a>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <figure class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1602506861344-c48f5f3ca2bb?q=80&w=1400&auto=format&fit=crop" alt="Asphalt shingle replacement" class="h-52 w-full object-cover"/>
+          <figcaption class="p-4">
+            <div class="font-semibold">Enumclaw – Full Replacement</div>
+            <div class="text-sm text-slate-600">Architectural shingles • New flashing & vents</div>
+          </figcaption>
+        </figure>
+        <figure class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1613967608744-6b273466a546?q=80&w=1400&auto=format&fit=crop" alt="Metal roof detail" class="h-52 w-full object-cover"/>
+          <figcaption class="p-4">
+            <div class="font-semibold">Bonney Lake – Metal Accent</div>
+            <div class="text-sm text-slate-600">Standing‑seam accent panels at entry</div>
+          </figcaption>
+        </figure>
+        <figure class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1599507593499-a3f7d7d97667?q=80&w=1400&auto=format&fit=crop" alt="Roof repair in progress" class="h-52 w-full object-cover"/>
+          <figcaption class="p-4">
+            <div class="font-semibold">Sumner – Leak Repair</div>
+            <div class="text-sm text-slate-600">Targeted repair • New flashing • Tune‑up</div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="headline text-3xl md:text-4xl font-extrabold">What neighbors say</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <blockquote class="rounded-2xl bg-white p-6 border border-slate-200 shadow-sm">
+          <p>“Clear bid, fair price, and the crew kept things tidy. Roof looks great.”</p>
+          <div class="mt-3 text-sm text-slate-600">— Homeowner in Puyallup</div>
+        </blockquote>
+        <blockquote class="rounded-2xl bg-white p-6 border border-slate-200 shadow-sm">
+          <p>“Diagnosed a tricky leak and fixed it the first time. Excellent communication.”</p>
+          <div class="mt-3 text-sm text-slate-600">— Property Manager, Bonney Lake</div>
+        </blockquote>
+        <blockquote class="rounded-2xl bg-white p-6 border border-slate-200 shadow-sm">
+          <p>“Finished ahead of schedule and left the yard spotless. Highly recommend.”</p>
+          <div class="mt-3 text-sm text-slate-600">— Enumclaw Resident</div>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="headline text-3xl md:text-4xl font-extrabold">Roofing FAQ</h2>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <details class="rounded-2xl border border-slate-200 p-6 bg-slate-50/60">
+          <summary class="font-semibold cursor-pointer">How long does a typical roof replacement take?</summary>
+          <p class="mt-2 text-slate-700">Most single‑family projects take 1–3 days depending on size, layers, and weather. We'll provide a schedule up front.</p>
+        </details>
+        <details class="rounded-2xl border border-slate-200 p-6 bg-slate-50/60">
+          <summary class="font-semibold cursor-pointer">Do you offer repairs or only full replacements?</summary>
+          <p class="mt-2 text-slate-700">We handle both. We can diagnose issues and recommend the most cost‑effective fix before suggesting replacement.</p>
+        </details>
+        <details class="rounded-2xl border border-slate-200 p-6 bg-slate-50/60">
+          <summary class="font-semibold cursor-pointer">What roofing materials do you install?</summary>
+          <p class="mt-2 text-slate-700">Architectural asphalt shingles are most common. We also install metal accents, skylights, and gutters/guards.</p>
+        </details>
+        <details class="rounded-2xl border border-slate-200 p-6 bg-slate-50/60">
+          <summary class="font-semibold cursor-pointer">Are you licensed and insured?</summary>
+          <p class="mt-2 text-slate-700">Yes—we maintain current licensing and insurance. Add your license # and we'll place it in the footer and schema.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 bg-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="headline text-3xl md:text-4xl font-extrabold">Request your free estimate</h2>
+          <p class="mt-3 text-slate-200">Tell us a bit about your project and where the property is located. We'll reach out to schedule a walkthrough.</p>
+          <div class="mt-6 grid grid-cols-2 gap-4 text-slate-200/90">
+            <div class="rounded-xl bg-white/5 p-4 border border-white/10"><div class="font-bold text-white">Hours</div><div class="text-sm">Mon–Fri 8–5</div></div>
+            <a href="https://maps.google.com" target="_blank" rel="noopener" class="rounded-xl bg-white/5 p-4 border border-white/10 hover:bg-white/10"><div class="font-bold text-white">Service Area</div><div class="text-sm">Pierce & South King County</div></a>
+          </div>
+          <div class="mt-6 text-sm text-slate-300">Prefer to call? Call us at (253) 455-4347.</div>
+        </div>
+        <form class="bg-white text-slate-800 rounded-2xl p-6 border border-slate-200" name="lead" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="lead" />
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium">Name</label>
+              <input class="mt-1 w-full rounded-lg border-slate-300 focus:border-cyan-600 focus:ring-cyan-600" name="name" required />
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Email</label>
+              <input type="email" class="mt-1 w-full rounded-lg border-slate-300 focus:border-cyan-600 focus:ring-cyan-600" name="email" required />
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Phone</label>
+              <input class="mt-1 w-full rounded-lg border-slate-300 focus:border-cyan-600 focus:ring-cyan-600" name="phone" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium">City</label>
+              <input class="mt-1 w-full rounded-lg border-slate-300 focus:border-cyan-600 focus:ring-cyan-600" name="city" />
+            </div>
+            <div class="sm:col-span-2">
+              <label class="block text-sm font-medium">Project Type</label>
+              <select class="mt-1 w-full rounded-lg border-slate-300 focus:border-cyan-600 focus:ring-cyan-600" name="type">
+                <option>Roof Replacement</option>
+                <option>Roof Repair</option>
+                <option>Maintenance / Tune‑Up</option>
+                <option>Gutters / Guards</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="block text-sm font-medium">Details</label>
+              <textarea rows="4" class="mt-1 w-full rounded-lg border-slate-300 focus:border-cyan-600 focus:ring-cyan-600" name="details" placeholder="Timeline, age of current roof, leaks, photos link, etc."></textarea>
+            </div>
+          </div>
+          <button class="mt-4 w-full rounded-xl bg-cyan-700 text-white px-5 py-3 font-semibold hover:bg-cyan-800">Send Request</button>
+          <p class="mt-2 text-xs text-slate-500">By submitting, you agree to be contacted about your project. No spam.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <footer class="bg-white border-t border-slate-200">
     <div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-8">
       <div>
         <div class="flex items-center gap-3">
-          <img src="/assets/TrustworthyLogo.jpg" alt="Trustworthy Roofing logo" class="w-7 h-7 rounded-full"/>
+          <svg width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-cyan-700"><path d="M6 22L24 8l18 14v18a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V22Z" stroke="currentColor" stroke-width="2"/></svg>
           <div class="font-extrabold">Trustworthy Roofing</div>
         </div>
-        <p class="mt-3 text-sm text-slate-600">Quality roofing by Trustworthy Construction. Serving Pierce & South King County. Licensed & Insured WA # TRUSTWCC12345.</p>
+        <p class="mt-3 text-sm text-slate-600">Quality roofing by Trustworthy Construction. Serving Puyallup, Bonney Lake, Enumclaw, Buckley, and nearby communities.</p>
       </div>
       <div>
         <div class="font-semibold">Services</div>
@@ -136,11 +331,17 @@
         </ul>
       </div>
       <div>
+        <div class="font-semibold">Website</div>
+        <ul class="mt-3 space-y-2 text-sm text-slate-600">
+          <li><a class="hover:underline" href="https://trustworthy-construction.com" target="_blank" rel="noopener">trustworthy-construction.com</a></li>
+        </ul>
+      </div>
+      <div>
         <div class="font-semibold">Contact</div>
         <ul class="mt-3 space-y-2 text-sm text-slate-600">
-          <li>Email: <a href="mailto:Teamtrustworthyconstruction@gmail.com" class="text-cyan-700">Teamtrustworthyconstruction@gmail.com</a></li>
-          <li>Phone: <a href="tel:+12534554347" class="text-cyan-700">(253) 455‑4347</a></li>
-          <li>Website: <a href="https://trustworthy-construction.com" class="text-cyan-700">trustworthy-construction.com</a></li>
+          <li>Email: <a class="text-cyan-700 hover:underline" href="mailto:Teamtrustworthyconstruction@gmail.com">Teamtrustworthyconstruction@gmail.com</a></li>
+          <li>Phone: <a class="text-cyan-700 hover:underline" href="tel:+12534554347">(253) 455-4347</a></li>
+          <li>License: <span class="text-slate-500">WA # (add license number)</span></li>
         </ul>
         <a href="#contact" class="inline-flex mt-4 rounded-xl bg-cyan-700 text-white px-4 py-2 font-semibold hover:bg-cyan-800">Free Estimate</a>
       </div>
@@ -148,12 +349,6 @@
     <div class="text-center text-xs text-slate-500 pb-8">© <span id="year"></span> Trustworthy Roofing • All rights reserved.</div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    document.getElementById('menuBtn').addEventListener('click',()=>{
-      const m=document.getElementById('mobileNav');
-      m.classList.toggle('hidden');
-    });
-  </script>
+  <script src="/js/main.js"></script>
 </body>
 </html>
